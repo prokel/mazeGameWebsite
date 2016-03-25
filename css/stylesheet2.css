@@ -1,0 +1,168 @@
+p{
+  color: orange;
+  font-family: arial;
+  text-align: center;
+  font-size: 25;
+  padding-top: 10px;
+}
+
+.title {
+  color: orange;
+  font-family: arial;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 50px;
+}
+
+/* Important stuffs */
+.menuButton {
+  	left: 0;
+	position: fixed;
+    margin-top: 27.5px;
+    margin-left: 15px;
+    z-index: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    animation: 1.25s menuButton;
+}
+.menuBar {
+    width: 100%;
+    height: 3px;
+    background-color: #FE9603;
+    border-radius: 3px;
+}
+.menuBar:after, .menuBar:before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    border-radius: 3px;
+}
+.menuBar:after {
+    top: 10px;
+    background-color: #FE9603;
+}
+.menuBar:before {
+    top: 20px;
+    background-color: #FE9603;
+}
+@-webkit-keyframes menuButton {
+    0% {
+        left: -500px;
+    }
+    100% {
+        left: 0;
+    }
+}
+@keyframes menuButton {
+    0% {
+        left: -500px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.menu {
+    left: -340px;
+    height: 100%;
+    position: fixed;
+    width: 200px;
+    color: #fff;
+    margin: 0;
+    z-index: 900;
+    padding-top: 50px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.menu ul {
+    list-style-type: none;
+    display: inline;
+}
+.menu li a {
+    margin-top: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    background: #444;
+    color: #fff;
+		padding: 12px 15px;
+    opacity: .9;
+    filter: alpha(opacity=90);
+	font-family: "Open Sans";
+	display: inline-block;
+	position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.menu li .active {
+    background: #666;
+}
+.menu li a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    opacity: 1;
+}
+.menu li a:hover:before, .menu li a:focus:before, .menu li a:active:before {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.menu .item1 a:before {
+    background: #FC913A;
+}
+.menu .item2 a:before {
+    background: #E1F5C4;
+}
+.menu .item3 a:before {
+    background: #E1F5C4;
+}
+/*.menu .item4 a:before {
+    background: #D54431;
+}
+.menu .item5 a:before {
+    background: #e2913d;
+}
+.menu .item6 a:before {
+    background: #249FAF;
+}
+.menu .item7 a:before {
+    background: #bcbbb3;
+}
+*/
