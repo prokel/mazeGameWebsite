@@ -7,7 +7,7 @@ var w = window,
 var x = w.innerWidth || e.clientWidth || g.clientWidth,
         y = w.innerHeight || e.clientHeight || g.clientHeight;
 
-var width = 800,
+var width = 1250,
     height = 800;
 
 
@@ -194,11 +194,11 @@ var body = document.querySelectorAll('body');
         var finishY = 0 * cellSize + (0 + 1) * cellSpacing
         game.beginPath();
         game.arc(finishX + (cellSize / 2), finishY + (cellSize / 2), cellSize / 2, 0, 2 * Math.PI, false);
-        game.fillStyle = "blue";
+        game.fillStyle = '#FA6900';
         game.fill();
         game.beginPath();
         game.arc(playerX + (cellSize / 2), playerY + (cellSize / 2), cellSize / 2, 0, 2 * Math.PI, false);
-        game.fillStyle = "red";
+        game.fillStyle = '#F38630';
         game.fill();
     }
 

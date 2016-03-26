@@ -1,24 +1,108 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
-p{
-  color: orange;
+.welcome {
   font-family: 'Raleway';
+  font-size: 50;
   text-align: center;
-  font-size: 25;
-  padding-top: 10px;
+  padding-top: 500;
+  color: #EE1775;
+  border-bottom: thick solid #EE1775;
+  margin-left: 950px;
+  margin-right: 950px;
+  padding-bottom: 30px;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
 }
 
-.title {
-  color: orange;
+.click {
   font-family: 'Raleway';
+  font-size: 20;
   text-align: center;
-  padding-top: 150px;
-  font-size: 50px;
+  color: #EE1775;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  font-weight: bold;
 }
+
+@keyframes example {
+    0% {color: #E42692;}
+    10% {color: red;}
+    20% {color: orange;}
+    30% {color: #F9D423}
+    40% {color: #C0D23E}
+    50% {color: green;}
+    60% {color: blue;}
+    70% {color: #AD2BAD;}
+    80% {color: #EE1775;}
+
+    0% {border-bottom-color: #E42692;}
+    10% {border-bottom-color: red;}
+    20% {border-bottom-color: orange;}
+    30% {border-bottom-color: #F9D423}
+    40% {border-bottom-color: #C0D23E}
+    50% {border-bottom-color: green;}
+    60% {border-bottom-color: blue;}
+    70% {border-bottom-color: #AD2BAD;}
+    80% {border-bottom-color: #EE1775;}
+
+}
+
+@keyframes examplek {
+  0% {background-color: #E42692;}
+  10% {background-color: red;}
+  20% {background-color: orange;}
+  30% {background-color: #F9D423}
+  40% {background-color: #C0D23E}
+  50% {background-color: green;}
+  60% {background-color: blue;}
+  70% {background-color: #AD2BAD;}
+  80% {background-color: #EE1775;}
+}
+
+@keyframes examplekk {
+  0% {border-bottom-color: #E42692;}
+  10% {border-bottom-color: red;}
+  20% {border-bottom-color: orange;}
+  30% {border-bottom-color: #F9D423}
+  40% {border-bottom-color: #C0D23E}
+  50% {border-bottom-color: green;}
+  60% {border-bottom-color: blue;}
+  70% {border-bottom-color: #AD2BAD;}
+  80% {border-bottom-color: #EE1775;}
+}
+
+@keyframes bodycustom {
+  0% {border-color: #E42692;}
+  10% {border-color: red;}
+  20% {border-color: orange;}
+  30% {border-color: #F9D423}
+  40% {border-color: #C0D23E}
+  50% {border-color: green;}
+  60% {border-color: blue;}
+  70% {border-color: #AD2BAD;}
+  80% {border-color: #EE1775}
+}
+@keyframes slide {
+  0% {color: #E42692;}
+  10% {color: red;}
+  20% {color: orange;}
+  30% {color: #F9D423}
+  40% {color: #C0D23E}
+  50% {color: green;}
+  60% {color: blue;}
+  70% {color: #AD2BAD;}
+  80% {color: #EE1775;}
+}
+
+
 
 /* Important stuffs */
 .menuButton {
   	left: 0;
-	position: fixed;
+    position: fixed;
     margin-top: 27.5px;
     margin-left: 15px;
     z-index: 0;
@@ -35,8 +119,12 @@ p{
 .menuBar {
     width: 100%;
     height: 3px;
-    background-color: #FE9603;
+    animation-name: examplek;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
     border-radius: 3px;
+    background-color: #EE1775;
+    animation-timing-function: ease-out;
 }
 .menuBar:after, .menuBar:before {
     content: '';
@@ -47,11 +135,19 @@ p{
 }
 .menuBar:after {
     top: 10px;
-    background-color: #FE9603;
+    animation-name: examplek;
+    animation-duration: 20s;
+    background-color: #EE1775;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 .menuBar:before {
     top: 20px;
-    background-color: #FE9603;
+    animation-name: examplek;
+    animation-duration: 20s;
+    background-color: #EE1775;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 @-webkit-keyframes menuButton {
     0% {
@@ -151,8 +247,11 @@ p{
 .menu .item2 a:before {
     background: #E1F5C4;
 }
-.menu .item3 a:before {
-    background: #EE1775;
+.menu .item3 a:before { 
+  animation-name: slide;
+  animation-duration: 20s;
+  background-color: #EE1775;
+  animation-iteration-count: infinite;
 }
 /*.menu .item4 a:before {
     background: #D54431;
@@ -168,118 +267,10 @@ p{
 }
 */
 
-
-
-
-
-.and-this-just-feels-like-spinning-plates {
-  margin-top: 10%;
-  width: 0.1px;
-  height: 0.1px;
-  border: 40px solid transparent;
-  border-radius: 0px;
-  -webkit-animation: loader 0.9s ease-in infinite, spin 1.8s linear infinite;
-          animation: loader 0.9s ease-in infinite, spin 1.8s linear infinite;
-          margin-left: 48.75%;
-}
-
-.and-this-just-feels-like-spinning-plates::before {
-  display: block;
-  position: absolute;
-  z-index: -1;
-  margin-left: -40px;
-  margin-top: -40px;
-  content: '';
-  height: 0.1;
-  width: 0.1;
-  border: 40px solid transparent;
-  border-radius: 0px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-animation: loader 0.9s ease-in infinite;
-          animation: loader 0.9s ease-in infinite;
-}
-
-@-webkit-keyframes loader {
-  0% {
-    border-bottom-color: transparent;
-    border-top-color: orange;
-  }
-  25% {
-    border-left-color: transparent;
-    border-right-color: orange;
-  }
-  50% {
-    border-top-color: transparent;
-    border-bottom-color: orange;
-  }
-  75% {
-    border-right-color: transparent;
-    border-left-color: orange;
-  }
-  100% {
-    border-bottom-color: transparent;
-    border-top-color: orange;
-  }
-}
-
-@keyframes loader {
-  0% {
-    border-bottom-color: transparent;
-    border-top-color: orange;
-  }
-  25% {
-    border-left-color: transparent;
-    border-right-color: orange;
-  }
-  50% {
-    border-top-color: transparent;
-    border-bottom-color: orange;
-  }
-  75% {
-    border-right-color: transparent;
-    border-left-color: orange;
-  }
-  100% {
-    border-bottom-color: transparent;
-    border-top-color: orange;
-  }
-}
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
-
 body {
-  border-top: 25px solid orange;
-  border-bottom: 30px solid orange;
+  border: 20px solid #EE1775;
   margin: -10px;
-}
-
-.edgepiece {
-  color: black;
-  background-color: black;
-  margin-left: 200px;
-  height: 80px;
-  width: 400px;
-  border: 10px solid black;
-  border-radius: 12px;
-  margin-top: -75px;
-  box-shadow: 7px 7px 5px gray;
+  animation-name: bodycustom;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
